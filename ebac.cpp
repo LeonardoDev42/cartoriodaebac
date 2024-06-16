@@ -72,7 +72,7 @@ int registro()// função responsável por cadastrar os usuário no sistema
 	FILE *file;
 	file=fopen(cpf,"r");
 	
-	if(file== NULL)
+	if(file== NULL);
 	{
 		printf("não foi possível abrir o arquivo,não localizado!\n");
 	}
@@ -122,6 +122,8 @@ int main()
 	printf("\t1-Registro de nomes\n");
 	printf("\t2-Consultar nomes\n");
 	printf("\t3-Deleatr nomes\n");
+	printf("\t4-sair do sistema\n");
+	
 	printf("opção:");
 	
 	scanf("%d",&opcao);
@@ -143,6 +145,18 @@ int main()
 	    deletar();
 	    break;
 	    
+	    case 4:
+	    printf("obrigado por utilizar o sistema\n");
+	    return 0;
+	    break;
+	    
+		
+	
+	    
+	    
+	    
+		
+		
 	  
 	    
 	    default:
@@ -155,7 +169,10 @@ int main()
      
     }
 
-    }
+    
+	}
+    
+	
 	
 	
 
